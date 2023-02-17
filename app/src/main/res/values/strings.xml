@@ -13,12 +13,19 @@
     <string name="about_this_application">This application is developed by Zhang Xiukai In 5 days of learning Android development.</string>
     <string name="long_markdown">
         # Hello world!\n
+        I actually enjoys doing android development, it is better than flutter in that android
+        is a complete solution to Android apps.
         This AnTodo application is crated by Zhang Xiukai with ❤️.\n
 
         <div align="center">
             ![how-about-gifs?](https://face.zhaoxi.org/upload/201208/21/2.03142464.gif)\n
         </div>
 
+        ## Requirements\n
+        - [x] 5+ Activities\n
+        - [x] Custom ListView\n
+        - [X] Sqlite\n
+        \n
         ## Basic modern app dev\n
         **layers**\n
         1. UI Layer\n
@@ -55,7 +62,14 @@
         - [Android Docs - data-binding](https://developer.android.com/topic/libraries/data-binding)\n
         - [Android Docs - menus](https://developer.android.com/develop/ui/views/components/menus)\n
         - [Android Docs - data-storage/room](https://developer.android.com/training/data-storage/room)\n
+        - [Android Docs - data-storage/shared-preferences](https://developer.android.com/training/data-storage/shared-preferences)\n
         - [Android Docs - processes-and-threads](https://developer.android.com/guide/components/processes-and-threads)\n
+        - [Android Docs - UI Guide - settings](https://developer.android.com/develop/ui/views/components/settings)\n
+        - [Android Docs - settings-guidelines](https://source.android.com/devices/tech/settings/settings-guidelines)\n
+        - [Android Docs - androidx/preference](https://developer.android.com/reference/androidx/preference/package-summary)\n
+        - [Android Docs - appbar](https://developer.android.com/develop/ui/views/components/appbar)\n
+        - [Android Docs - darktheme](https://developer.android.com/develop/ui/views/theming/darktheme)\n
+        - [Android Docs - viewmodel](https://developer.android.com/topic/libraries/architecture/viewmodel)\n
         - [Qiita - Android で Singleton を使う場合の注意点](https://qiita.com/ishihatta/items/827ccd361b74d4c270cd)\n
     </string>
     <string name="about">About</string>

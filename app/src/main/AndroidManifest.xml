@@ -28,6 +28,10 @@
             android:name=".AboutActivity"
             android:exported="true"
             android:label="AnTodo" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="true"
+            android:label="AnTodo" />
     </application>
 
 </manifest>

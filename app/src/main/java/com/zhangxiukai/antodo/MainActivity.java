@@ -51,32 +51,33 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
-//        menu.getItem(0).getActionView().setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                final Intent intent = new Intent(MainActivity.this, AboutActivity.class);
-//                startActivity(intent);
-//            }
-//        });
         return true;
+    }
+
+    void pushToActivity(Class<?> cls) {
+        final Intent intent = new Intent(MainActivity.this, cls);
+        startActivity(intent);
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.action_about:
-                final Intent intent = new Intent(MainActivity.this, AboutActivity.class);
-                startActivity(intent);
+            case R.id.action_about: {
+                pushToActivity(AboutActivity.class);
                 break;
+            }
 
-            case R.id.action_settings:
+            case R.id.action_settings: {
+                pushToActivity(SettingsActivity.class);
                 break;
+            }
 
             default:
                 break;
