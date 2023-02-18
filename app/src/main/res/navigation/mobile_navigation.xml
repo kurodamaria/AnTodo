@@ -7,19 +7,14 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.zhangxiukai.antodo.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:name="com.zhangxiukai.antodo.ui.active_tasks.ActiveTasksFragment"
+        android:label="@string/menu_active_tasks"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.zhangxiukai.antodo.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
+        android:name="com.zhangxiukai.antodo.ui.finished_tasks.FinishedTasksFragment"
+        android:label="@string/menu_finished_tasks"
         tools:layout="@layout/fragment_gallery" />
 
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.zhangxiukai.antodo.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
 </navigation>

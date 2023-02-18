@@ -1,4 +1,4 @@
-package com.zhangxiukai.antodo.ui.home;
+package com.zhangxiukai.antodo.ui.active_tasks;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,20 +12,21 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.zhangxiukai.antodo.databinding.FragmentHomeBinding;
 
-public class HomeFragment extends Fragment {
+public class ActiveTasksFragment extends Fragment {
 
     private FragmentHomeBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        // Create a view model from view model provider and get the model of HomeViewModel
+        ActiveTasksViewModel activeTasksViewModel =
+                new ViewModelProvider(this).get(ActiveTasksViewModel.class);
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        activeTasksViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

@@ -34,8 +34,7 @@ public class MainActivity extends AppCompatActivity {
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                pushToActivity(AddTaskActivity.class);
             }
         });
 
@@ -45,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+                R.id.nav_home, R.id.nav_gallery)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
@@ -61,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    void pushToActivity(Class<?> cls) {
+    private void pushToActivity(Class<?> cls) {
         final Intent intent = new Intent(MainActivity.this, cls);
         startActivity(intent);
     }
@@ -76,6 +75,11 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.action_settings: {
                 pushToActivity(SettingsActivity.class);
+                break;
+            }
+
+            case R.id.action_stats: {
+                pushToActivity(StatsActivity.class);
                 break;
             }
 

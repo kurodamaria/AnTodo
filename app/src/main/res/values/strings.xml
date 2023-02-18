@@ -2,14 +2,13 @@
     <string name="app_name">AnTodo</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">AnTodo</string>
+    <string name="nav_header_subtitle">github.com/kurodamaria/AnTodo.git</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_active_tasks">Active Tasks</string>
+    <string name="menu_finished_tasks">Finished Tasks</string>
     <string name="about_this_application">This application is developed by Zhang Xiukai In 5 days of learning Android development.</string>
     <string name="long_markdown">
         # Hello world!\n
@@ -50,7 +49,8 @@
         Data binding and view binding are two types of bindings in Android.\n
 
         ## References\n
-        This page is written in markdown and rendered with [Markwon](https://github.com/noties/Markwon).\n
+        This page is written in markdown and rendered with [Markwon](https://github.com/noties/Markwon).
+        The launcher icon is generated with Image Asset Studio.\n
         - [Android Docs - manifest-intro](https://developer.android.com/guide/topics/manifest/manifest-intro)\n
         - [Android Docs - Intent](https://developer.android.com/reference/android/content/Intent)\n
         - [Android Docs - Button](https://developer.android.com/reference/android/widget/Button)\n
@@ -70,7 +70,22 @@
         - [Android Docs - appbar](https://developer.android.com/develop/ui/views/components/appbar)\n
         - [Android Docs - darktheme](https://developer.android.com/develop/ui/views/theming/darktheme)\n
         - [Android Docs - viewmodel](https://developer.android.com/topic/libraries/architecture/viewmodel)\n
+        - [Android Docs - image-asset-studio](https://developer.android.com/studio/write/image-asset-studio)\n
+        - [Android Docs - timer](https://developer.android.com/reference/java/util/Timer)\n
+        - [Dev.to - declarative-vs-imperative](https://dev.to/ruizb/declarative-vs-imperative-4a7l)\n
+        - [Wikipedia - domain](https://en.wikipedia.org/wiki/Domain_(software_engineering))\n
+        - [Wikipedia - domain model](https://en.wikipedia.org/wiki/Domain_model)\n
+        - [Wikipedia - domain model](https://en.wikipedia.org/wiki/Domain_model)\n
+        - [stackoverflow - restrict-edittext-to-single-line](https://stackoverflow.com/questions/10978038/restrict-edittext-to-single-line)\n
+        - [stackoverflow - how-to-set-minimum-datepicker-date-to-current-date](https://stackoverflow.com/questions/13661788/how-to-set-minimum-datepicker-date-to-current-date)\n
+        - [stackoverflow - mvvm-rxandroid-cannot-invoke-setvalue-on-a-background-thread](https://stackoverflow.com/questions/53999701/mvvm-rxandroid-cannot-invoke-setvalue-on-a-background-thread)\n
+        - [Digital Ocean - android-textinputlayout-example](https://www.digitalocean.com/community/tutorials/android-textinputlayout-example)\n
         - [Qiita - Android で Singleton を使う場合の注意点](https://qiita.com/ishihatta/items/827ccd361b74d4c270cd)\n
     </string>
     <string name="about">About</string>
+    <string name="add_a_new_task_today">Add a new task today</string>
+    <string name="task_title_input_hint">Task title</string>
+    <string name="task_input_description_hint">Task description</string>
+    <string name="add_task_pick_deadline_hint">Pick a deadline:</string>
+    <string name="statistics">Statistics</string>
 </resources>

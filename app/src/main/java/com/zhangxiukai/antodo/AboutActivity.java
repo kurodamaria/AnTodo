@@ -21,6 +21,7 @@ public class AboutActivity extends AppCompatActivity {
 
         final Context context = getApplicationContext();
 
+
         final Markwon markwon = Markwon.builder(context)
                 .usePlugin(ImagesPlugin.create())
                 .usePlugin(HtmlPlugin.create())
