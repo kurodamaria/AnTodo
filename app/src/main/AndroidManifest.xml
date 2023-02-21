@@ -14,7 +14,7 @@
         android:theme="@style/Theme.AnTodo"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.main.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.AnTodo.NoActionBar">
@@ -25,21 +25,30 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AboutActivity"
+            android:name=".ui.about.AboutActivity"
+            android:parentActivityName=".ui.main.MainActivity"
+            android:windowSoftInputMode="adjustResize"
             android:exported="true"
-            android:label="AnTodo" />
+            android:label="About" />
         <activity
-            android:name=".SettingsActivity"
+            android:name=".ui.settings.SettingsActivity"
+            android:parentActivityName=".ui.main.MainActivity"
             android:exported="false"
-            android:label="AnTodo" />
+            android:label="Settings" />
         <activity
-            android:name=".AddTaskActivity"
+            android:name=".ui.addtask.AddTaskActivity"
+            android:parentActivityName=".ui.main.MainActivity"
             android:exported="true"
-            android:label="AnTodo" />
+            android:label="Add" />
         <activity
-            android:name=".StatsActivity"
+            android:name=".ui.edittask.EditTaskActivity"
+            android:parentActivityName=".ui.main.MainActivity"
+            android:label="Edit" />
+        <activity
+            android:name=".ui.stats.StatsActivity"
+            android:parentActivityName=".ui.main.MainActivity"
             android:exported="true"
-            android:label="AnTodo" />
+            android:label="Statistics" />
     </application>
 
 </manifest>

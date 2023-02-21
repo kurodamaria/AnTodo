@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <SwitchPreferenceCompat
-        android:key="notifications"
-        android:title="Enable message notification"/>
+        android:key="dark_mode"
+        android:title="Enable dark mode" />
 
     <Preference
+        app:allowDividerAbove="true"
         android:key="feedback"
         android:title="Send feedback"
-        android:summary="Report technical issues or suggest new features"/>
+        android:summary="Report technical issues or suggest new features in the github repository." />
 </PreferenceScreen>

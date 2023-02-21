@@ -3,18 +3,44 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_active_tasks">
+
+    <action
+        android:id="@+id/action_global_stats_activity"
+        app:destination="@+id/nav_activity_stats" />
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.zhangxiukai.antodo.ui.active_tasks.ActiveTasksFragment"
+        android:id="@+id/nav_active_tasks"
+        android:name="com.zhangxiukai.antodo.ui.main.fragment.ActiveTasksFragment"
         android:label="@string/menu_active_tasks"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_active_tasks" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.zhangxiukai.antodo.ui.finished_tasks.FinishedTasksFragment"
+        android:id="@+id/nav_finished_tasks"
+        android:name="com.zhangxiukai.antodo.ui.main.fragment.FinishedTasksFragment"
         android:label="@string/menu_finished_tasks"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_finished_tasks">
+        <argument
+            android:name="hello_msg"
+            app:argType="string"
+            android:defaultValue="Hi Gallery" />
+    </fragment>
+
+    <activity
+        android:id="@+id/nav_activity_about"
+        android:name="com.zhangxiukai.antodo.ui.about.AboutActivity"
+        android:label="About" />
+
+    <activity
+        android:id="@+id/nav_activity_stats"
+        android:name="com.zhangxiukai.antodo.ui.stats.StatsActivity"
+        android:label="Statistics">
+
+        <argument
+            android:name="hello_msg"
+            app:argType="string"
+            android:defaultValue="Hi Stats!" />
+
+    </activity>
 
 </navigation>
